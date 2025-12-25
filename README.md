@@ -9,7 +9,7 @@ mvn -v
 ```
 mvn clean install
 ```bash
-
+./mvnw clean install
 # ## Refference Documentation
 MCP inspector and server documentation: https://modelcontextprotocol.io/docs/tools/inspector#typescript
 Springboot AI documentation: https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html
