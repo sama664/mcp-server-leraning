@@ -5,8 +5,11 @@ import org.slf4j.LoggerFactory;
 import org.springaicommunity.mcp.annotation.McpResource;
 import org.springaicommunity.mcp.annotation.McpTool;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @Component
+@RestController
 public class SoumitraMcptooladdition {
 
     public static Logger logger= LoggerFactory.getLogger(SoumitraMcptooladdition.class);
@@ -25,6 +28,7 @@ public class SoumitraMcptooladdition {
     }
 
     @McpResource(name="getlist",uri="/current-list")
+    @GetMapping("/current-list")
     public String currentList(){
         logger.info("Inside currentList method of SoumitraMcptooladdition");
         return "Current shopping list: Milk, Eggs, Bread, Butter";
