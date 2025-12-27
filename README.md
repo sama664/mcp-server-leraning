@@ -32,3 +32,5 @@ MCP inspector and server documentation: https://modelcontextprotocol.io/docs/too
 Springboot AI documentation: https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html
 MCP architecture : https://modelcontextprotocol.io/docs/learn/architecture
 Learning resources: https://learn.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic/lesson/k0f9c/connecting-the-mcp-chatbot-to-reference-servers
+# Run tools
+Select one of tool from list and run
