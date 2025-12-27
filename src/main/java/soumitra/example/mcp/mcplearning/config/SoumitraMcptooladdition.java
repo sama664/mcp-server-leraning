@@ -2,6 +2,7 @@ package soumitra.example.mcp.mcplearning.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springaicommunity.mcp.annotation.McpResource;
 import org.springaicommunity.mcp.annotation.McpTool;
 import org.springframework.stereotype.Component;
 
@@ -22,4 +23,11 @@ public class SoumitraMcptooladdition {
         logger.info("Inside christmasWishList method of SoumitraMcptooladdition");
         return "toys, mickey mouse merchandise, chocolates";
     }
+
+    @McpResource(name="getlist",uri="/current-list")
+    public String currentList(){
+        logger.info("Inside currentList method of SoumitraMcptooladdition");
+        return "Current shopping list: Milk, Eggs, Bread, Butter";
+    }
+
 }
